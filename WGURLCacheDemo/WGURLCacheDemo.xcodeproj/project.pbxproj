@@ -16,6 +16,8 @@
 		0058D0E221CB91DF003288F6 /* WGURLCacheDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058D0E121CB91DF003288F6 /* WGURLCacheDemoTests.m */; };
 		0058D0ED21CB91DF003288F6 /* WGURLCacheDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058D0EC21CB91DF003288F6 /* WGURLCacheDemoUITests.m */; };
 		0058D0FB21CB9217003288F6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0058D0FA21CB9217003288F6 /* Podfile */; };
+		0058D10221CB9312003288F6 /* WGNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058D10121CB9312003288F6 /* WGNetManager.m */; };
+		0058D10521CB9322003288F6 /* WGDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058D10421CB9322003288F6 /* WGDBManager.m */; };
 		57C4715D110D8863511A1026 /* libPods-WGURLCacheDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F6988F14038400AAF53537 /* libPods-WGURLCacheDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +55,11 @@
 		0058D0E821CB91DF003288F6 /* WGURLCacheDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGURLCacheDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0058D0EC21CB91DF003288F6 /* WGURLCacheDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGURLCacheDemoUITests.m; sourceTree = "<group>"; };
 		0058D0EE21CB91DF003288F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0058D0FA21CB9217003288F6 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		0058D0FA21CB9217003288F6 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0058D10021CB9312003288F6 /* WGNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGNetManager.h; sourceTree = "<group>"; };
+		0058D10121CB9312003288F6 /* WGNetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNetManager.m; sourceTree = "<group>"; };
+		0058D10321CB9322003288F6 /* WGDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGDBManager.h; sourceTree = "<group>"; };
+		0058D10421CB9322003288F6 /* WGDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGDBManager.m; sourceTree = "<group>"; };
 		3EC51C4A9E51C168156BD7E1 /* Pods-WGURLCacheDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGURLCacheDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WGURLCacheDemo/Pods-WGURLCacheDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		53F6988F14038400AAF53537 /* libPods-WGURLCacheDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WGURLCacheDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6028D53804E063321722BE /* Pods-WGURLCacheDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGURLCacheDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WGURLCacheDemo/Pods-WGURLCacheDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 		0058D0C721CB91DE003288F6 /* WGURLCacheDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0058D0FE21CB92E3003288F6 /* WGDBManager */,
+				0058D0FD21CB92CE003288F6 /* WGNetManager */,
 				0058D0C821CB91DE003288F6 /* AppDelegate.h */,
 				0058D0C921CB91DE003288F6 /* AppDelegate.m */,
 				0058D0CB21CB91DE003288F6 /* ViewController.h */,
@@ -140,6 +148,24 @@
 				0058D0EE21CB91DF003288F6 /* Info.plist */,
 			);
 			path = WGURLCacheDemoUITests;
+			sourceTree = "<group>";
+		};
+		0058D0FD21CB92CE003288F6 /* WGNetManager */ = {
+			isa = PBXGroup;
+			children = (
+				0058D10021CB9312003288F6 /* WGNetManager.h */,
+				0058D10121CB9312003288F6 /* WGNetManager.m */,
+			);
+			path = WGNetManager;
+			sourceTree = "<group>";
+		};
+		0058D0FE21CB92E3003288F6 /* WGDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				0058D10321CB9322003288F6 /* WGDBManager.h */,
+				0058D10421CB9322003288F6 /* WGDBManager.m */,
+			);
+			path = WGDBManager;
 			sourceTree = "<group>";
 		};
 		367C25C3D4DB4674772240C6 /* Frameworks */ = {
@@ -312,7 +338,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0058D10521CB9322003288F6 /* WGDBManager.m in Sources */,
 				0058D0CD21CB91DE003288F6 /* ViewController.m in Sources */,
+				0058D10221CB9312003288F6 /* WGNetManager.m in Sources */,
 				0058D0D821CB91DF003288F6 /* main.m in Sources */,
 				0058D0CA21CB91DE003288F6 /* AppDelegate.m in Sources */,
 			);

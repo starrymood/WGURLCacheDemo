@@ -6,6 +6,7 @@ target 'WGURLCacheDemo' do
 
 pod 'Masonry'
 pod 'AFNetworking'
+pod 'FMDB'
 
 
 end
