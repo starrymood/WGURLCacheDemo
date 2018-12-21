@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WGDBManager : NSObject
 
++ (instancetype)shareDBManager;
+
++ (void)creatDBWithDBName:(NSString *)name;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
